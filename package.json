@@ -3,7 +3,7 @@
   "description": "Knex logging middleware for Koa2",
   "author": "Rohan Nair <r@rohannair.ca>",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [
     "knex",
     "koa",
