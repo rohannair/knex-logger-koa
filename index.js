@@ -1,6 +1,6 @@
 'use strict';
 
-import chalk from 'chalk';
+const chalk = require('chalk');
 
 const colored = fn => () => {
   const enabled = chalk.enabled;
@@ -9,7 +9,7 @@ const colored = fn => () => {
   chalk.enabled = enabled;
 };
 
-export default knex =>
+module.exports.default = knex =>
   async(ctx, next) => {
     const queries = [];
 
