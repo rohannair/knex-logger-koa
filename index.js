@@ -38,8 +38,8 @@ module.exports.default = knex =>
 
     const logQueries = colored(() => {
       queries.forEach(query =>
-        console.log('%s%s%s %s',
-          chalk.yellow.bold('  knex:query '),
+        console.log('  %s %s %s %s',
+          chalk.yellow.bold('knex:query'),
           chalk.cyan(query.sql),
           chalk.gray('{' + query.bindings.join(', ') + '}'),
           chalk.magenta(query.duration + 'ms')
